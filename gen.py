@@ -213,7 +213,8 @@ def create_chat_interface(data):
                 # start_time = datetime.now()
 
                 with st.spinner("🧙‍♂️ Analyzing data..."):
-                    llm = PandasAIOpenAI(api_token=API, model="gpt-4o")
+                    # llm = PandasAIOpenAI(api_token=API, model="gpt-4o")
+                    llm = PandasAIOpenAI(api_token=API, model="gpt-4")
 
                     df = SmartDataframe(
                         data,
