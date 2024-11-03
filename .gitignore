@@ -1,0 +1,34 @@
+# Ignore cache and exports directories
+cache/
+exports/
+
+# Ignore pandasai log file
+pandasai.log
+secrets.toml
+
+# Standard Python ignores
+__pycache__/
+*.py[cod]
+*.ipynb_checkpoints
+
+# Environment and package manager ignores
+env/
+.venv/
+venv/
+*.env
+*.venv
+*.envrc
+.venv/
+*.pyenv
+*.tox/
+*.nox/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# IDE/editor specific ignores
+.vscode/
+.idea/
+*.swp
+
+# macOS specific files
+.DS_Store
