@@ -34,19 +34,19 @@ API = st.secrets["API_KEY"]
 # Dataset mapping
 NT_DATASETS = {
     "🏫 Education Statistics": {
-        "url": "data\/School_List_Public_2024_11_02_06_12_00.csv",
+        "url": "data/School_List_Public_2024_11_02_06_12_00.csv",
         "description": "List of Schools across Northern Territory",
         "category": "Education",
         "last_updated": "2021-06-23",
     },
     "🚓 NT Crime Statistics": {
-        "url": "data\/nt_crime_statistics_full_data.csv",
+        "url": "data/nt_crime_statistics_full_data.csv",
         "description": "Crime Statistics and Safty Metrics across Northern Territory",
         "category": "Crime",
         "last_updated": "2024-10-03",
     },
     "💼 NT Employment": {
-        "url": "data\/erecruit-open-data-portal.csv",
+        "url": "data/erecruit-open-data-portal.csv",
         "description": "Employment and Workfoce statistics across Northern Territory",
         "category": "Employment",
         "last_updated": "2021-06-23",
