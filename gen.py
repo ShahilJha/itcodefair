@@ -173,8 +173,8 @@ def handle_user_input():
     if st.session_state.get('user_input') and st.session_state.get('user_input').strip():
         start_time = datetime.now()
                 
-       
-        st.session_state['current_analysis'] = st.session_state.get('user_input')
+        if st.session_state.get('user_input') != "":
+            st.session_state['current_analysis'] = st.session_state.get('user_input')
         st.session_state['user_input'] = ''
         st.session_state['loading'] = True
         st.session_state['chat_history'].append({
@@ -420,10 +420,19 @@ with st.sidebar:
     st.subheader("⚡ Quick Actions")
     if st.button("📊 Generate Summary"):
         st.session_state['current_analysis'] = "Generate a comprehensive summary of this dataset"
+        st.session_state['loading'] = True  # Set loading to trigger processing
+        handle_user_input()  # Call function to handle immediately
+        st.rerun()  # Rerun app to display results
     if st.button("🔍 Find Correlations"):
         st.session_state['current_analysis'] = "Find and explain the most significant correlations in this dataset"
+        st.session_state['loading'] = True  # Set loading to trigger processing
+        handle_user_input()  # Call function to handle immediately
+        st.rerun() 
     if st.button("📈 Trend Analysis"):
         st.session_state['current_analysis'] = "Analyze and describe the major trends present in this dataset"
+        st.session_state['loading'] = True  # Set loading to trigger processing
+        handle_user_input()  # Call function to handle immediately
+        st.rerun() 
 
 # Main Content
 if selected_dataset:
