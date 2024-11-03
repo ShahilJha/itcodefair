@@ -1,7 +1,7 @@
-pandas==1.5.3
-streamlit==1.25.0
-langchain-ollama==0.0.4
-pandasai==0.8.5
-requests==2.31.0
-openai==0.27.0
-plotly==5.15.0
+pandas
+streamlit
+langchain-ollama
+pandasai
+requests
+openai
+plotly
